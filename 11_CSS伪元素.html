@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS伪元素</title>
+    <style>
+        q::before {
+            content:"“";
+            color: red;
+        }
+        q::after {
+            content: "”";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<q>一些引用</q>，他说，<q>比没有好。</q>
+</body>
+</html>

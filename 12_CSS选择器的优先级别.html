@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS选择器的优先级别</title>
+    <style>
+        p {
+            color: #2ECC71 !important;
+        }
+        .myclass {
+            color: orange;
+        }
+        #p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+    1、类选择器高于元素选择器；
+    2、ID选择器级别高于元素选择器和类选择器
+    3、内联样式高于外联样式
+    4、加上!important的选择器优先级最高，但是会打乱实际的优先级别
+-->
+    <p id="p" class="myclass">这是一个段落内容。</p>
+</body>
+</html>
